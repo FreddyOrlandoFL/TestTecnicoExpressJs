@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+  
     "start": "node /src/index.js",
-    "dev": "node --watch  src/index.js"
+    "dev": "babel-node  src/index.js --exec babel-node"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +23,10 @@
     "tedious": "^18.1.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.4",
     "dotenv": "^16.4.5"
   }
 }
